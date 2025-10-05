@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Ethan Carson
+# DATE: 10/5/2025
+# BRIEF DESCRIPTION:  This program converts a grade percentage into a grade letter, based on user input.
 
 
 
@@ -15,23 +15,19 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
-
-percent = int(input('Enter a numerical grade (1-100): '))
-
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
+print("===== Grade Converter =====")
+grade = int(input('Enter a numerical grade (1-100): '))
+if(grade < 65):
+    print("F")
+elif(grade < 70):
     print('D')
-else:
-    print('F')
-
+elif(grade < 80):
+    print('C')
+elif(grade < 90):
+    print('B')
+elif(grade < 100):
+    print('A')
+else: print('A+')
 ########### END YER CODE ABOVE THIS LINE ###########
 
     
@@ -85,7 +81,7 @@ D
 1. What is something you would tell a future student to be careful about when
    doing this lab?
 
-
+Don't overthink this problem. You need to focus on a specific range, what ways can that be done in Python? pick ur favorite, they will all work if done correctly.
 
 
 
